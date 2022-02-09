@@ -1,0 +1,21 @@
+/* forms */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="week"],
+input[multiple],
+textarea,
+select {
+    @apply block w-full rounded-sm border-gray-300 shadow-sm;
+}
+.form-error {
+    @apply text-red-500 text-sm mt-1;
+}

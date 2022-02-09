@@ -1,0 +1,3 @@
+.panel {
+    @apply bg-white shadow sm:rounded px-4 py-4;
+}

@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./utils.css";
+@import "./forms.css";
+@import "./buttons.css";
+@import "./tables.css";
+@import "./panels.css";
+@import "./modal.css";
+@import "./tree-menu.css";
+
+.headcolor {
+    background-color: #38383D;
+}

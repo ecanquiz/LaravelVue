@@ -1,0 +1,20 @@
+.table-data__wrapper {
+    @apply overflow-x-auto border shadow border-gray-200 sm:rounded;
+}
+.table-data {
+    @apply min-w-full divide-y divide-gray-200;
+}
+.table-data thead {
+    @apply bg-gray-50;
+}
+
+.table-data th {
+    @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.table-data tbody {
+    @apply bg-white divide-y divide-gray-200;
+}
+.table-data td {
+    @apply px-6 py-4 whitespace-nowrap;
+}

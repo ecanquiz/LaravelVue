@@ -1,0 +1,81 @@
+/* Main Layout: Mobile First */
+
+.tabs-enh {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  border: 1px solid #ccc;
+}
+
+.tabs-enh * {
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .tabs-enh {
+    flex-direction: row;
+  }
+  
+  .tabs-enh > * {
+    min-height: 12rem;
+  }
+}
+
+/* Inner and Outer Layout */
+
+.tab-enh-headers {
+  flex-basis: 30%;
+}
+
+.tab-enh-headers div {
+  padding-left:  1rem;
+  padding-right: 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+
+  color: white;
+  font-size: 1rem; 
+}
+
+.tab-enh-headers div div {
+  width: 100%;
+}
+
+.tab-enh-spacer {
+  height: 1.25rem;
+}
+
+.tab-enh-contents {
+  flex-basis: 70%;
+}
+
+.tab-enh-contents > div {
+  padding-left:  1rem;
+  padding-right: 1rem;
+  height: 100%;
+
+  color: black;
+  font-size: 1rem;
+}
+
+.tab-enh-content {
+  padding: 1rem;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .tab-enh-headers div {
+    padding-left:  1rem;
+    padding-right: 0rem;
+  }
+
+  .tab-enh-contents > div {
+  padding-left:  0;
+  padding-right: 1rem;
+  }
+}

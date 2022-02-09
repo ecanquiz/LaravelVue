@@ -1,0 +1,36 @@
+.tab-enh-headers > div:hover {
+  background-color: #9e9e9e;
+}
+
+.tab-enh-headers div.active:hover {
+  background-color: #616161;
+}
+
+.tab-enh-headers div.active div:hover {
+  background-color: #e0e0e0;
+}
+
+.tab-enh-spacer {
+  background-color: #616161;
+}
+
+.tab-enh-content {
+  background-color: white;
+}
+
+.tab-enh-contents div div.is-hovered {
+  background-color: #e0e0e0;
+}
+
+/* Add some decoration */
+
+.bg-white      { background-color: white; }
+.bg-gray-700   { background-color: #616161; }
+.bg-orange-500 { background-color: #ff9800; }
+.bg-teal-500   { background-color: #009688;  }
+.bg-blue-500   { background-color: #2196f3; }
+.bg-red-500    { background-color: #f44336; }
+
+.tab-enh-headers .bg-white {
+  color: black;
+}
