@@ -4,6 +4,8 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use Inertia\Inertia;
+use App\Exceptions\ExceptionInstance;
 
 class Handler extends ExceptionHandler
 {
@@ -37,5 +39,25 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+    }
+    
+    public function render($request, Throwable $e)
+    {
+    
+        if ( ExceptionInstance::ofNotValidation($e) && env("APP_ENV") === "production" ) {
+        
+            if ( ExceptionInstance::ofCustom($e) )  {
+            
+                return $e->render($request);
+                
+            } else {
+            
+                $params = ExceptionInstance::ofNotCustom($e);
+                return Inertia::render("Error", $params);
+                
+            }
+        } 
+        
+        return parent::render($request, $e);
     }
 }
