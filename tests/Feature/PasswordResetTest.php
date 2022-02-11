@@ -8,10 +8,11 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Notification;
 use Laravel\Fortify\Features;
 use Tests\TestCase;
+use Tests\Feature\UserTestable;
 
 class PasswordResetTest extends TestCase
 {
-    use RefreshDatabase;
+    use RefreshDatabase, UserTestable;
 
     public function test_reset_password_link_screen_can_be_rendered()
     {
@@ -31,6 +32,8 @@ class PasswordResetTest extends TestCase
         }
 
         Notification::fake();
+        
+        UserTestable::roleSeeder();
 
         $user = User::factory()->create();
 
@@ -48,6 +51,8 @@ class PasswordResetTest extends TestCase
         }
 
         Notification::fake();
+
+        UserTestable::roleSeeder();
 
         $user = User::factory()->create();
 
@@ -71,6 +76,8 @@ class PasswordResetTest extends TestCase
         }
 
         Notification::fake();
+
+        UserTestable::roleSeeder();
 
         $user = User::factory()->create();
 
