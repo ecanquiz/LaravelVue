@@ -13,7 +13,7 @@ use App\Http\Controllers\{
   GeneralSettingsController,
   MenuController,
   MyProfileController,
-  //PostController,
+  PostController,
   RoleController,
   //TaskController,
   UserController,  
@@ -93,14 +93,14 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
       //Route::put('/password', [MyProfileController::class, 'updatePassword'])->name('myprofile-password.update');
     });
     
-    /*Route::prefix('posts')->group(function () {
+    Route::prefix('posts')->group(function () {
         Route::get('/', [PostController::class, 'index'])->name('posts');        
         Route::post('/', [PostController::class, 'store'])->name('posts.store');        
         Route::put('/{post}', [PostController::class, 'update'])->name('posts.update');
         Route::delete('/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
     });
     
-    Route::prefix('tasks')->group(function () {
+    /*Route::prefix('tasks')->group(function () {
         Route::get('/', [TaskController::class, 'index'])->name('tasks');
         Route::get('/create', [TaskController::class, 'create'])->name('tasks.create');
         Route::post('/', [TaskController::class, 'store'])->name('tasks.store');

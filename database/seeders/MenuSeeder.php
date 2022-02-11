@@ -38,13 +38,13 @@ class MenuSeeder extends Seeder
             "sort" => 3
         ]);
 
-        /*Menu::create([
+        Menu::create([
             "title" => "Publicaciones",
             "menu_id" =>  2,
             "path" => "posts",
             "icon" => "posts.svg",
             "sort" => 2
-        ]);*/
+        ]);
 
         /*Menu::create([
             "title" => "Jornales",
