@@ -25,7 +25,7 @@ use App\Http\Controllers\{
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-|
+|resources/js/Pages/
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
@@ -89,8 +89,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     Route::prefix('myprofile')->group(function () {
       Route::get('/edit', [MyProfileController::class, 'edit'])->name('myprofile.edit');      
-      //Route::put('/', [MyProfileController::class, 'update'])->name('myprofile.update');      
-      //Route::put('/password', [MyProfileController::class, 'updatePassword'])->name('myprofile-password.update');
+      Route::put('/', [MyProfileController::class, 'update'])->name('myprofile.update');      
+      Route::put('/password', [MyProfileController::class, 'updatePassword'])->name('myprofile-password.update');
     });
     
     Route::prefix('posts')->group(function () {

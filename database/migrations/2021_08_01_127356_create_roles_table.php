@@ -12,7 +12,7 @@ return new class extends Migration
      * @return void
      */
     public function up()
-    {//https://stackoverflow.com/questions/32954424/laravel-migration-array-type-store-array-in-database-column
+    {
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
             $table->string('name', 30)->unique();

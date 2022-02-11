@@ -22,10 +22,6 @@ return new class extends Migration
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
-            //$table->string('role')->default('user');
-            $table->foreignId('role_id')->default(2)
-                  ->references('id')
-                  ->on('roles');
             $table->timestamps();
         });
     }
