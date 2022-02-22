@@ -37,6 +37,14 @@ class MenuSeeder extends Seeder
             "icon" => "dashboard.svg",
             "sort" => 3
         ]);
+        
+        Menu::create([
+            "title" => "Pruebas",
+            "menu_id" =>  null,
+            "path" => "#",
+            "icon" => "dashboard.svg",
+            "sort" => 4
+        ]);
 
         Menu::create([
             "title" => "Publicaciones",
@@ -132,6 +140,14 @@ class MenuSeeder extends Seeder
             "icon" => "settings.svg",
             "sort" => 4
         ]);*/
+        
+        Menu::create([
+            "title" => "Intereses de Mora",
+            "menu_id" => 4,
+            "path" => "interest-on-arrears",
+            "icon" => "dashboard.svg",
+            "sort" => 1
+        ]);
 
     }
 }

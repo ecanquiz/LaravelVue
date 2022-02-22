@@ -18,6 +18,7 @@ use App\Http\Controllers\{
   //TaskController,
   UserController,  
   //ZoneController,
+  TestController,
   SearchController,
 };
 
@@ -176,6 +177,11 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         //Route::put('/{monthlyMovement}', [MonthlyMovementDetailController::class, 'update'])->name('monthly-movements.update');
         //Route::delete('/{monthlyMovement}', [MonthlyMovementDetailController::class, 'destroy'])->name('monthly-movements.destroy');
     });*/
+    
+    Route::prefix('tests')->group(function () {
+        Route::get('/interest-on-arrears', [TestController::class, 'interestOnArrears'])->name('interest-on-arrears');
+        Route::post('/interest-on-arrears/test', [TestController::class, 'interestOnArrearsTest'])->name('interest-on-arrears.test');     
+    });
 
     
     Route::get('search', SearchController::class)->name('search');    
