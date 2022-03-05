@@ -4,7 +4,7 @@
   >
     <div class="lg:px-8 max-w-md mx-auto sm:px-6">
       <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">      
-        <IconLogo class="h-50 w-50 text-green-900"/>
+        <IconLogo class="h-50 w-50 text-gray-900"/>
       </div>
 
       <div v-if="canLogin" class="flex justify-center text-lg mt-10 space-x-5">

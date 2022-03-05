@@ -1,7 +1,7 @@
 <template>
 <div class="max-w-md">
   <Link :href="'/'">
-    <IconLogo class="h-40 w-40 text-green-900"/>
+    <IconLogo class="h-40 w-40 text-gray-900"/>
   </Link>    
 </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <div class="flex justify-center min-h-screen bg-green-100">
+  <div class="flex justify-center min-h-screen bg-gray-100">
     <Sidebar />
     <div class="flex-1 flex flex-col overflow-hidden">
       <FlashMessages />
@@ -14,7 +14,7 @@
   </div>
       <footer
         v-if="$page.props.settings.footer_message"
-        class="footer text-right p-2 text-sm bg-green-500"
+        class="footer text-right p-2 text-sm bg-gray-500"
         v-html="$page.props.settings.footer_message"
       ></footer>
 </template>

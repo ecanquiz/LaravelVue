@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-green-700 border-b-2 border-red-700 flex items-center justify-between px-6 py-4"
+    class="bg-gray-700 border-b-2 border-red-700 flex items-center justify-between px-6 py-4"
   >
     <div class="flex items-center">
       <button
@@ -40,7 +40,7 @@
  
          <div
            v-show="dropdownOpen"
-           class="absolute right-0 mt-2 py-2 w-48 bg-green-500 rounded-md shadow-xl z-20"
+           class="absolute right-0 mt-2 py-2 w-48 bg-gray-500 rounded-md shadow-xl z-20"
            @click="dropdownOpen=false"
          >
            <Link
