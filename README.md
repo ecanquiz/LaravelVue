@@ -4,11 +4,15 @@
 
 ### Installation Steps 
 
-Prerequisites:
+Prerequisites, have installed:
 
-PHP 8.1
-Node 16.9.1
-Create database MySQL (or PostgreSQL) called `db_name_laravel_vue` or whatever name you prefer.
+- Git
+- PHP 8.1
+- Composer (Dependency Manager for PHP)
+- Node 16.9.1
+- npm (Package Manager)
+- MySQL v>=8 (or PostgreSQL v>=13)
+- Create database called `db_name_laravel_vue` or whatever name you prefer.
 
 Steps:
 
@@ -19,16 +23,24 @@ Steps:
 - 5° Run `php artisan --version`
 - 6° Run `cp .env.example .env`
 - 7° Run `php artisan key:generate`
-- 9° configure database in `.env` file.
-
-Example:
+- 9° configure database in `.env` file. Example:
 ```
+...
 DB_DATABASE=db_name_laravel_vue
 DB_USERNAME=root
 DB_PASSWORD='12345678'
+...
 ```
 - 10° Run `php artisan migrate:fresh --seed`
 - 11° Run `npm install`
 - 12° Run `npm run dev`
 - 13° Run `php artisan storage:link`
 - 14° Run `php artisan optimize`
+- 15° Run `php artisan serve`
+
+And that's it, the app is now installed.
+Now you can see the app running in your browser by `http://127.0.0.1:8000`
+
+To login use the following credentials:
+- E-mail: "admin@admin.com"
+- Password: "asdf"
