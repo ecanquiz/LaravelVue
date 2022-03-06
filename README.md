@@ -23,7 +23,7 @@ Steps:
 - 5° Run `php artisan --version`
 - 6° Run `cp .env.example .env`
 - 7° Run `php artisan key:generate`
-- 9° configure database in `.env` file. Example:
+- 9° Configure database in `.env` file. Example:
 ```
 ...
 DB_DATABASE=db_name_laravel_vue
