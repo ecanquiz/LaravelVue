@@ -42,5 +42,5 @@ And that's it, the app is now installed.
 Now you can see the app running in your browser by `http://127.0.0.1:8000`
 
 To login use the following credentials:
-- E-mail: "admin@admin.com"
-- Password: "asdf"
+- E-mail: `admin@admin.com`
+- Password: `asdf`
