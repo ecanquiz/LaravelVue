@@ -26,6 +26,7 @@ Example:
 DB_DATABASE=db_name_laravel_vue
 DB_USERNAME=root
 DB_PASSWORD='12345678'
+SESSION_DOMAIN=false
 ```
 - 10° Run `php artisan migrate:fresh --seed`
 - 11° Run `npm install`
