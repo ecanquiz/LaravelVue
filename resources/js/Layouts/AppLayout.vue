@@ -21,7 +21,7 @@
 
 <script>
 import { defineComponent, ref, onMounted } from "vue";
-import FlashMessages from "@/Shared/FlashMessages";
+import FlashMessages from "@/Shared/FlashMessages.vue";
 import Header from "./Header.vue";
 import Sidebar from "./Sidebar.vue";
 

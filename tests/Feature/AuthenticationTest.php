@@ -36,7 +36,6 @@ class AuthenticationTest extends TestCase
 
     public function test_users_can_not_authenticate_with_invalid_password()
     {
-    
         UserTestable::roleSeeder();
 
         $user = User::factory()->create();

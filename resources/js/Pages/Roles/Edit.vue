@@ -73,9 +73,9 @@
 
 <script>
 import { Link } from "@inertiajs/inertia-vue3";
-import Layout from "@/Layouts/AppLayout";
-import LoadingButton from "@/Shared/LoadingButton";
-import PageHeader from "@/Shared/PageHeader";
+import Layout from "@/Layouts/AppLayout.vue";
+import LoadingButton from "@/Shared/LoadingButton.vue";
+import PageHeader from "@/Shared/PageHeader.vue";
 export default {
   metaInfo: { title: "Edit Role" },
   name: "Edit Role",

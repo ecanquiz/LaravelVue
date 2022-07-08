@@ -59,11 +59,11 @@
 </template>
 
 <script>
-import Layout from "@/Layouts/AppLayout";
-import PageHeader from "@/Shared/PageHeader";
-import Pagination from "@/Shared/Pagination";
-import Create from './Create'
-import Edit from './Edit'
+import Layout from "@/Layouts/AppLayout.vue";
+import PageHeader from "@/Shared/PageHeader.vue";
+import Pagination from "@/Shared/Pagination.vue";
+import Create from './Create.vue'
+import Edit from './Edit.vue'
 export default {
   metaInfo: { title: 'Menus' },
   layout: Layout,

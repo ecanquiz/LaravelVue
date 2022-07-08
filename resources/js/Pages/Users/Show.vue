@@ -38,8 +38,8 @@
 <script>
 import { Inertia } from "@inertiajs/inertia";
 import { Link } from "@inertiajs/inertia-vue3";
-import Layout from "@/Layouts/AppLayout";
-import PageHeader from "@/Shared/PageHeader";
+import Layout from "@/Layouts/AppLayout.vue";
+import PageHeader from "@/Shared/PageHeader.vue";
 
 export default {
   layout: Layout,

@@ -69,12 +69,12 @@
 import { defineComponent, ref, onMounted } from "vue";
 import { Link } from '@inertiajs/inertia-vue3';
 import { useSidebar } from "../hooks/useSidebar";
-import IconBell from "../Shared/Icons/Bell";
-import IconBurguer from "../Shared/Icons/Burguer";
-import IconLogo from "../Shared/Icons/Logo";
-import IconUser from "../Shared/Icons/User";
-import Search from "./Search";
-import Logout from "./Logout";
+import IconBell from "../Shared/Icons/Bell.vue";
+import IconBurguer from "../Shared/Icons/Burguer.vue";
+import IconLogo from "../Shared/Icons/Logo.vue";
+import IconUser from "../Shared/Icons/User.vue";
+import Search from "./Search.vue";
+import Logout from "./Logout.vue";
 
 export default defineComponent({
   components: {

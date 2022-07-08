@@ -32,7 +32,7 @@ class PasswordResetTest extends TestCase
         }
 
         Notification::fake();
-        
+
         UserTestable::roleSeeder();
 
         $user = User::factory()->create();

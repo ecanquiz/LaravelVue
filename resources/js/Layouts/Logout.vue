@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import IconLogout from "../Shared/Icons/Logout";
+import IconLogout from "../Shared/Icons/Logout.vue";
 export default {
   components: { IconLogout },
   name: "Logout",

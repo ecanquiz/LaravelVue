@@ -9,7 +9,7 @@ use Tests\Feature\UserTestable;
 
 class TwoFactorAuthenticationSettingsTest extends TestCase
 {
-    use RefreshDatabase;
+    use RefreshDatabase, UserTestable;
 
     public function test_two_factor_authentication_can_be_enabled()
     {

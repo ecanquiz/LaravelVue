@@ -1,3 +1,14 @@
+<script>
+import Layout from "@/Layouts/ErrorsLayout";
+export default {
+  layout: Layout,
+  props: {
+      msg: String,
+      cod: Number
+  },
+}
+</script>
+
 <template>
   <div class="container mx-auto px-4">
     <section class="py-12 px-4 text-center">
@@ -18,13 +29,3 @@
   </div> 
 </template>
 
-<script>
-import Layout from "@/Layouts/ErrorsLayout";
-export default {
-  layout: Layout,
-  props: {
-      msg: String,
-      cod: Number
-  },
-}
-</script>

@@ -1,6 +1,6 @@
 <script setup>
 import { Inertia } from "@inertiajs/inertia"
-import TreeMenu from './TreeMenu'
+import TreeMenu from './TreeMenu.vue'
 
 const menus = Inertia.page.props.menu.data
 </script>

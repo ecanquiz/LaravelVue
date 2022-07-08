@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import FlashMessagesIcon from "@/Shared/FlashMessagesIcon";
+import FlashMessagesIcon from "@/Shared/FlashMessagesIcon.vue";
 
 export default {
   components: { FlashMessagesIcon },

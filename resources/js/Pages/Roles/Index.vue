@@ -85,9 +85,9 @@
 import { defineComponent } from "vue";
 import { Inertia } from "@inertiajs/inertia";
 import { Link } from "@inertiajs/inertia-vue3";
-import Layout from "@/Layouts/AppLayout";
-import PageHeader from "@/Shared/PageHeader";
-import Pagination from "@/Shared/Pagination";
+import Layout from "@/Layouts/AppLayout.vue";
+import PageHeader from "@/Shared/PageHeader.vue";
+import Pagination from "@/Shared/Pagination.vue";
 import { useSearch } from "@/hooks/useTableGrid";
 export default defineComponent({
   metaInfo: { title: "Roles" },

@@ -25,7 +25,7 @@
 import { defineComponent, ref } from "vue";
 import { Link } from '@inertiajs/inertia-vue3'
 import { useSidebar } from "../hooks/useSidebar.js";
-import RecursiveMenu from "@/Layouts/RecursiveMenu/Index";
+import RecursiveMenu from "@/Layouts/RecursiveMenu/Index.vue";
 
 export default defineComponent({
 components: {

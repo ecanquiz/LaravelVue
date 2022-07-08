@@ -70,12 +70,12 @@
 </template>
 
 <script>
-import Layout from "@/Layouts/AppLayout";
+import Layout from "@/Layouts/AppLayout.vue";
 import Create from "./Create.vue";
 import Edit from "./Edit.vue";
 import { Inertia } from "@inertiajs/inertia";
-import PageHeader from "@/Shared/PageHeader";
-import Pagination from "@/Shared/Pagination";
+import PageHeader from "@/Shared/PageHeader.vue";
+import Pagination from "@/Shared/Pagination.vue";
 import { useSearch } from "@/hooks/useTableGrid";
 import { defineComponent, ref } from "vue";
 

@@ -116,7 +116,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::put('/', [GeneralSettingsController::class, 'update'])->name('settings.update');
     });
     
-    Route::prefix('users')->middleware(['role:admin'])->group(function () {    
+    //Route::prefix('users')->middleware(['role:admin'])->group(function () {
+    Route::prefix('users')->group(function () {
         Route::get('/', [UserController::class, 'index'])->name('users');
         Route::get('/create', [UserController::class, 'create'])->name('users.create');
         Route::post('/', [UserController::class, 'store'])->name('users.store');

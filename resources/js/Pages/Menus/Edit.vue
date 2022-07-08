@@ -108,7 +108,7 @@
 </template>
 
 <script>
-import LoadingButton from '@/Shared/LoadingButton'
+import LoadingButton from '@/Shared/LoadingButton.vue'
 export default {
   components: {    
     LoadingButton,
