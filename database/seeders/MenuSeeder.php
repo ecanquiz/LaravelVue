@@ -37,14 +37,6 @@ class MenuSeeder extends Seeder
             "icon" => "dashboard.svg",
             "sort" => 3
         ]);
-        
-        Menu::create([
-            "title" => "Pruebas",
-            "menu_id" =>  null,
-            "path" => "#",
-            "icon" => "dashboard.svg",
-            "sort" => 4
-        ]);
 
         Menu::create([
             "title" => "Publicaciones",

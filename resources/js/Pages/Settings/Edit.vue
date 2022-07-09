@@ -38,8 +38,8 @@
 </template>
 
 <script>
-import Layout from "@/Layouts/AppLayout";
-import PageHeader from "@/Shared/PageHeader";
+import Layout from "@/Layouts/AppLayout.vue";
+import PageHeader from "@/Shared/PageHeader.vue";
 export default {
   metaInfo() {
     return {
